@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+:root{
+    --cor0: #c5ebd6;
+    --cor01: #83e1ad;
+    --cor02: #3ddc84;
+    --cor03: #2fa866;
+    --cor04: #1a5c37;
+    --cor05: #063d1e;
+
+    --fonte-padrao: arial, Helvetica, sans-serif;
+    --fonte-destaque: "Kaushan Script", 'cursive';
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+      color: white;
+    background-color: var(--cor0) ;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.324);
+    text-align: center;
+    padding: 20px;
+}
+header >p{
+    text-align: center;
+}
+
+header > h1{
+    color: white;
+    text-align: center;
+}
+nav{
+    background-color: #2fa866 ;
+    box-shadow: inset 1px 1px 0px 1px rgba(0, 0, 0, 0.377);
+    text-align: left;
+    padding: 10px;
+
+}
+nav > a{
+    color: white;
+}
+h1 {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    color: #063d1e;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+
+}
+.texto{ 
+    display:flex;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    color: #063d1e;
+    font-size: 26px;
+}
+h2{
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    color: #063d1e;
+    background-color: #c5ebd6;
+    text-align: left;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+p{
+   font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 30px; /* <-- recuo de parágrafo */
+    margin: 0 auto 20px auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+article{
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    max-width: 900px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000033;
+}
+body{
+    background-color: #c5ebd6;
+}
+img{
+    width: 100%;
+}
+aside{
+    background-color: #83E1AD;
+    text-align: justify;
+}
+h3 {
+    background-color: var(--cor04) !important;
+    color: white !important;
+}
+.lista {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* espaço entre as colunas */
+    flex-wrap: wrap; /* quebra em telas pequenas */
+    margin-top: 20px;
+    text-align: left;
+}
+
+.lista ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista li::before {
+    content: "✔️ ";
+    margin-right: 6px;
+}
+
+.final{
+    color: white;
+    background-color: #063d1e;
+}
+
+
