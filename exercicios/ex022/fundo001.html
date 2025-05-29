@@ -7,15 +7,18 @@
         <style>
             body{
                 background-image: url(imagens/wallpaper002.jpg);
-                display: flex;
+               
                 
+            }
+            div.container{
+                display: flex;
+                flex-direction: row;
             }
 
             div.quadrado{
                 display: inline-block;
                 border: 2px solid black;
                 border-radius: 10px;
-                background-color: lightgray;
                 width: 300px;
                 height: 300px;
             }
@@ -33,28 +36,30 @@
 </head>
 <body>
 
-        <div class="quadrado" id="q1">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, fugit facere vel soluta molestias labore dolorum omnis, illo dolores eum porro. Architecto dignissimos veniam exercitationem officiis odio maxime odit saepe?</p>
-        </div>
-        <div class="quadrado" id="q2">
-            <img src="imagens/pattern002.png" alt="">
-        </div>
-        
-        <div class="quadrado" id="q3">
-            <ol>
-                <li>margarida</li>
-                <li>girasol</li>
-                <li>lírio</li>
-                <li>tulipas</li>
-                <li>orquídea</li>
-                <li>rosa</li>
-            </ol>
+        <div class="container">
+            <div class="quadrado" id="q1">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, fugit facere vel soluta molestias labore dolorum omnis, illo dolores eum porro. Architecto dignissimos veniam exercitationem officiis odio maxime odit saepe?</p>
+            </div>
+            <div class="quadrado" id="q2">
+                <img src="imagens/pattern002.png" alt="">
+            </div>
+            
+            <div class="quadrado" id="q3">
+                <ol>
+                    <li>margarida</li>
+                    <li>girasol</li>
+                    <li>lírio</li>
+                    <li>tulipas</li>
+                    <li>orquídea</li>
+                    <li>rosa</li>
+                </ol>
+            </div>
         </div>
 
-   
-    <article>
+    <div>
         <h1>Outros exemplos</h1>
-    </article>
+    </div>
+   
     
     
 </body>
