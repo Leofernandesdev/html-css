@@ -1,7 +1,150 @@
 @charset "UTF-8";
 
 /* Todas as demais mídias */
+/* Typical Device Breakpoints
+   -------------------------------
+   Pequenas telas: até 479px
+   Celular: de 480px até 767px
+   Tablet: de 768px até 991px
+   Laptop/Notebook: de 992px até 1199px
+   Desktop: de 1200px até 1919px
+   Telas grandes (Full HD+): de 1920px */
+@media print {
 
-@media screen {
-    
+    /* Impressão */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+        /* Desncessário */
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita através do site';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    body {
+        /* tablet */
+
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+    /* Desktop */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+
+        img#phone {
+            display: none;
+        }
+
+        img#tablet {
+            display: none;
+        }
+
+        img#print {
+            display: none;
+        }
+
+        img#pc {
+            display: block;
+        }
+
+        img#tv {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+
+    /* Grandes telas*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        margin: 700px;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
 }
