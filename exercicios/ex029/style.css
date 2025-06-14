@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery-item {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+.caption {
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+/* É AQUI QUE A MÁGICA VAI ACONTECER! */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 950px) {
+    .gallery-grid{
+        grid-template-columns: repeat(3, 1fr);  
+    }
+}
