@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lista li:first-child{
+            color: green;
+        }
+        .lista li:last-child{
+            font-style: italic;
+        }
+        .lista li:nth-child(even){
+            text-decoration: underline;
+        }
+        .lista li[title]{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="lista">
+        <li>Maçãs</li>
+        <li>Bananas</li>
+        <li class="destaque">Leite</li>
+        <li>Pão</li>
+        <li title="Não esquecer!">Café</li>
+    </ul>
+
+</body>
+
+</html>
